@@ -2,6 +2,8 @@ import "express-async-errors";
 import express, { json } from "express";
 import cors from "cors";
 import routes from "./routers/index.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 const server = express();
 server.use(json());
